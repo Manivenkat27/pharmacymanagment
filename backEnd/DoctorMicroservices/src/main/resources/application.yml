@@ -1,0 +1,10 @@
+spring:
+        application:
+               name: DoctorMicroservices             
+        cloud: 
+          gateway:
+            globalcors:
+              corsConfigurations:'[/**]':
+                allowedOrigins: "http://localhost:3000"
+                allowedHeaders: "*"
+                allowedMethods: "*"
